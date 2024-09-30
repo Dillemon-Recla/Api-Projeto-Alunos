@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Launch PHP Server on port 8000",
+            "type": "php",
+            "request": "launch",
+            "runtimeExecutable": "C:\\php-8.3.7\\php.exe",
+            "runtimeArgs": [
+                "-dxdebug.start_with_request=yes",
+                "-S",
+                "localhost:8000",
+                "-t",
+                "C:\\php-8.3.7\\api"
+            ],
+            "program": "",
+            "cwd": "C:\\php-8.3.7\\api",
+            "port": 9003,
+            "serverReadyAction": {
+                "pattern": "Development Server \\(http://localhost:8000\\) started",
+                "uriFormat": "http://localhost:8000/index.php?endpoint=alunos",
+                "action": "openExternally"
+            }
+        }
+    ]
+}

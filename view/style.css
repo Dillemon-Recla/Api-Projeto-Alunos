@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    height: 100vh;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkRBTnrOFUhVnwFqDdE14xMiZYQwzswG9ih7AHZ7Q4el5mVmA8JUSb0Mw9oXrUf60GgiYJxT15I6IoMeXkvy65znwrXml2qGkS_p0KqlWHHuyjy7mnyvNDVQ3HSnXYvJqYCnRQdzAB9IoKFCiNOSMSZjzPsv34vJNNyIcqV7nlyw471MEfNMkCnIlVuw/s1920/Papel%20de%20Parede%20Infantil%20Arco-%C3%ADris%20e%20Nuvens.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.Centro {
+
+    margin-top: -15px;
+    max-height: 600%;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: px 0px 10px 2px rgb(240, 158, 158);
+    background: linear-gradient(0deg, rgba(46, 109, 217, 1) 0%, rgba(149, 188, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.titulo {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #7e1f3a;
+    width: 25%;
+    margin: -0% 0% 0% 84%;
+    border-radius: 8px;
+    transform: rotate(40deg);
+
+}
+
+h1 {
+    color: #76fc9e;
+    font-family: "Concert One";
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    text-align: center;
+    background-image: url("image/faixa-azul.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 75%;
+    height: 155px;
+    margin-top: -25px;
+    margin-bottom: -50px;
+    padding-top: 30px;
+    text-shadow: 0px 0px 5px #000000;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.logo img {
+    width: 10rem;
+}
+
+
+.formulario {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+
+#form-inputs {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    justify-content: center;
+    padding: 3px 18px;
+}
+
+.container{
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    margin-top: 12px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 3px rgb(97, 3, 3);
+
+}
+
+input {
+    border-radius: 4px;
+    width: 100%;
+    padding: 6px 0px 6px 5px;
+    border: none;
+}
+
+.botao {
+    display: flex;
+    justify-content: right;
+}
+
+button {
+    padding: 10px 30px;
+    margin: 20px;
+    background-color: #0A5A90;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 0px 5px 2px rgb(255, 255, 255);
+
+}
+
+
+button:hover {
+    color: black;
+    background: #95bcff;
+    transition: 500ms;
+}
