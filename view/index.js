@@ -1,3 +1,5 @@
+const apiUrl = 'http://localhost:8000/index.php?endpoint=alunos';
+
 document.getElementById("cadastrar").addEventListener("click", function (event) {
 
     event.preventDefault();
@@ -7,7 +9,6 @@ document.getElementById("cadastrar").addEventListener("click", function (event) 
     const idadeAluno = document.getElementById('idadeAluno').value;
     const telefoneResponsavel = document.getElementById('telefoneResponsavel').value;
 
-    const apiUrl = 'http://localhost:8000/index.php?endpoint=alunos'
     const confirmacao = confirm("Tem certeza que deseja continuar?");
     if (confirmacao) {
 
@@ -36,3 +37,21 @@ document.getElementById("cadastrar").addEventListener("click", function (event) 
     }
 
 })
+
+async function showList(){
+    const formContainer = document.getElementById("listAndForm");
+
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    console.log(data);
+
+    let htmlList  = '<ul>';
+    data.forEach(aluno =>{
+        htmlList += `<li>${aluno.id}, ${aluno.nome_aluno}, ${aluno.nome_responsavel}, ${aluno.telefone}</li>`;
+    });
+    htmlList += '</ul>';
+
+    formContainer.innerHTML = htmlList;
+
+    document.getElementById('formulario', 'listar', 'cadastrar').style.display = 'none';
+}
