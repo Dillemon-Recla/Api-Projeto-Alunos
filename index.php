@@ -7,7 +7,7 @@ include_once 'C:\php-8.3.7\api\model\model.php';
 $method = "";
 
 if (isset($_SERVER['REQUEST_METHOD'])) {
-    if (isset($_GET['ENDPOINT']) && $_GET['ENDPOINT'] == 'alunos') {
+    if (isset($_GET['endpoint']) && $_GET['endpoint'] == 'alunos') {
         $method = $_SERVER['REQUEST_METHOD'];
     }
 }
@@ -29,7 +29,7 @@ switch ($method) {
 
 function getAlunos($pdo)
 {
-    $busca = $pdo->query("SELECT * FROM alunos");
+    $busca = $pdo->query("SELECT * FROM aluno");
     $alunos = $busca->fetchAll(PDO::FETCH_ASSOC);
     echo json_encode($alunos);
 }
@@ -44,7 +44,7 @@ function insertAlunos($pdo)
         && isset($data['idade_aluno'])
         && isset($data['telefone'])
     ) {
-        $stmt = $pdo->prepare("INSERT INTO alunos (
+        $stmt = $pdo->prepare("INSERT INTO aluno (
             nome_aluno,
             nome_responsavel,
             idade_aluno,

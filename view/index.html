@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="PT-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,50 +7,39 @@
     <title>Cadastro de Visitas</title>
 </head>
 
-
 <body>
-        <section class="Centro">
+    <section class="Centro">
         <div class="titulo">Cadastro para Visitas</div>
-
-            <h1>Procura-se Famílias Extraordinárias <br><span> Para um Ensino Alem do Tradicional</span>
-        </h1>
+        <h1>Procura-se Famílias Extraordinárias <br><span>Para um Ensino Além do Tradicional</span></h1>
         
         <div class="logo">
             <img src="image/balao-de-ar-quente-unscreen.gif" alt="balao-um" class="balao-um">
-            <img src="image/logobabys.svg" alt="logobaby">
+            <img src="image/.svg" alt="">
             <img src="image/balao-de-ar-quente-unscreen.gif" alt="balao-dois" class="balao-dois">
         </div>
 
-
-    <div class="formulario">
-
+        <div class="formulario">
             <form action="" id="form-inputs">
                 <div class="container">
                     <label for="NomeAluno">Nome do Aluno</label>
-                    <input type="text" placeholder="Aluno">
+                    <input type="text" id="nomeAluno" placeholder="Aluno">
                     <label for="Responsavel">Nome do Responsável</label>
-                    <input type="text" placeholder="Responsavel">
+                    <input type="text" id="nomeResponsavel" placeholder="Responsável">
                 </div>
                 <div class="container">
-                    <label id="numero" for="">Idade do Aluno</label>
-                    <input type="number" placeholder="Idade Aluno">
-                    <label id="numero"for="">Telefone para Contato</label>
-                    <input type="number" placeholder="Telefone">    
+                    <label id="numero" for="IdadeAluno">Idade do Aluno</label>
+                    <input type="number" id="idadeAluno" placeholder="Idade Aluno">
+                    <label id="numero" for="TelefoneResponsavel">Telefone para Contato</label>
+                    <input type="text" id="telefoneResponsavel" placeholder="Telefone">    
                 </div>
             </form>
         </div>
-        
-
 
         <div class="botao">
-            <button id="cadastrar">
-                Cadastrar
-            </button>
+            <button id="cadastrar">Cadastrar</button>
         </div>
 
         <script src="./index.js"> </script>
     </section>
-
 </body>
-
 </html>
